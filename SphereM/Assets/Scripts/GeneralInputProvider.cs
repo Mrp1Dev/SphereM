@@ -7,6 +7,6 @@ public class GeneralInputProvider : MonoBehaviour, IInputProvider
     // Update is called once per frame
     void Update()
     {
-        HorizontalAxis = Input.GetAxis("Horizontal");
+
     }
 }
