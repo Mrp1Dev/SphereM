@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class GeneralAccelerationProvider : MonoBehaviour, IAccelerationProvider
+public class GeneralAccelerationProvider : AffectedByStates, IAccelerationProvider
 {
     [SerializeField] 
     private float stockAcceleration;

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class GeneralTopSpeedProvider : MonoBehaviour, ITopSpeedProvider
+public class GeneralTopSpeedProvider : AffectedByStates, ITopSpeedProvider
 {
     [SerializeField]
     private float stockTopSpeed;
