@@ -1,5 +1,6 @@
 ﻿public interface IInputProvider
 {
-    float HorizontalAxis { get; }
+    float RawHorizontalAxis { get; }
+    float SmoothedHorizontalAxis { get; }
     bool DriftHeld { get; }
 }

@@ -17,6 +17,7 @@ public class Turning : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.angularVelocity = transform.up * input.HorizontalAxis * turnSpeedProvider.Speed * Time.deltaTime;
+        rb.angularVelocity =
+            transform.up * input.SmoothedHorizontalAxis * turnSpeedProvider.Speed * Time.deltaTime;
     }
 }

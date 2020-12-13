@@ -10,4 +10,14 @@ public class GeneralAccelerationProvider : AffectedByStates, IAccelerationProvid
     {
         Acceleration = stockAcceleration;
     }
+
+    private void Update()
+    {
+        Acceleration = stockAcceleration;
+        if (driftInfo.IsDrifting)
+        {
+            float multiplier = driftMultipliersProvider.DriftMultipliers.topSpeed;
+            Acceleration += stockAcceleration * multiplier - stockAcceleration;
+        }
+    }
 }
