@@ -16,10 +16,12 @@ public class GeneralFrictionAffected : AffectedByStates, IFrictionAffected
     {
         Friction = defaultFriction;
         if (driftInfo.IsDrifting)
-            Friction += defaultFriction * driftMultipliersProvider.DriftMultipliers.friction;
+            Friction +=
+                defaultFriction * driftMultipliersProvider.DriftMultipliers.friction - defaultFriction;
 
         SpeedLossPercent = speedLossPercent;
         if (driftInfo.IsDrifting)
-            SpeedLossPercent += speedLossPercent * driftMultipliersProvider.DriftMultipliers.speedLossPercent;
+            SpeedLossPercent += 
+                speedLossPercent * driftMultipliersProvider.DriftMultipliers.speedLossPercent - speedLossPercent;
     }
 }

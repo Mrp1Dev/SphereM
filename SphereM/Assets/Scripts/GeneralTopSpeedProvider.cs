@@ -11,4 +11,14 @@ public class GeneralTopSpeedProvider : AffectedByStates, ITopSpeedProvider
     {
         TopSpeed = stockTopSpeed;
     }
+
+    void Update()
+    {
+        TopSpeed = stockTopSpeed;
+        if (driftInfo.IsDrifting)
+        {
+            float multiplier = driftMultipliersProvider.DriftMultipliers.topSpeed;
+            TopSpeed += stockTopSpeed * multiplier - stockTopSpeed;
+        }
+    }
 }
