@@ -189,6 +189,8 @@ GameObject:
   - component: {fileID: 328080186}
   - component: {fileID: 328080177}
   - component: {fileID: 328080185}
+  - component: {fileID: 328080189}
+  - component: {fileID: 328080188}
   m_Layer: 0
   m_Name: SphereM
   m_TagString: Untagged
@@ -253,7 +255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f18e886217e94414fa7dcedffe80d362, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothSenstivity: 10
+  smoothSenstivity: 4
 --- !u!114 &328080178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -261,7 +263,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328080173}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd2572e7f07157d48bdca93150005680, type: 3}
   m_Name: 
@@ -274,7 +276,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328080173}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43cafd9bc2b4c014294a83e47194f1a7, type: 3}
   m_Name: 
@@ -300,7 +302,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328080173}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7323d9d758c4376409693d0cab3e9f42, type: 3}
   m_Name: 
@@ -313,7 +315,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328080173}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50389a5a15dca484e8abac6898ed668e, type: 3}
   m_Name: 
@@ -326,7 +328,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328080173}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b47106a16a3f40741817bde86e8cc84b, type: 3}
   m_Name: 
@@ -412,6 +414,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62b3c9ecf7eadc844b6802d0db2c1a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &328080188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328080173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058e6c5aba384874dbbecd24f67a35eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats:
+    topSpeedKPH: 350
+    acceleration: 25
+    turnSpeed: 2
+    friction: 0
+    speedLossPercent: 0
+--- !u!114 &328080189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328080173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4110add12177cb9439177711ff5631c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 328080174}
+  statsProvider: {fileID: 328080188}
 --- !u!1 &460991188
 GameObject:
   m_ObjectHideFlags: 0
