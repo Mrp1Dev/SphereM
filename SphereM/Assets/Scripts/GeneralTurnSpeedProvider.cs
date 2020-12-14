@@ -7,6 +7,7 @@ public class GeneralTurnSpeedProvider : AffectedByStates, ITurnSpeedProvider
 
     public float Speed { get; private set; }
 
+    private float dampVelocity;
     
 
     void Update()
