@@ -319,7 +319,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   driftMultipliers:
-    topSpeedKPH: 1
+    topSpeedKPH: 10
     acceleration: 1
     turnSpeed: 3.75
     friction: 0.5
@@ -343,6 +343,7 @@ MonoBehaviour:
     friction: 0.5
     speedLossPercent: 50
   driftInfoProvider: {fileID: 328080187}
+  driftChangesSpeed: 10
 --- !u!114 &328080189
 MonoBehaviour:
   m_ObjectHideFlags: 0
