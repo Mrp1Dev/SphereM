@@ -22,7 +22,7 @@ public class SphereController : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity += ForwardAccel();
-
+       
         rb.angularVelocity = transform.up * stats.turnSpeed * inputProvider.SmoothedHorizontalAxis;
     }
 
